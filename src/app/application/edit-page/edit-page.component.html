@@ -1,0 +1,36 @@
+<div class="backGround">
+  
+  <div>
+    <!-- ID input-->
+    <div class="">
+      <label class="">
+        <span>App ID</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="application.airId" disabled="disabled" placeholder="">
+      
+    </div>
+
+    <!-- Name input-->
+    <div>
+      <label class="">
+        <span>App Name</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="application.applicationName" placeholder="">
+
+    </div>
+
+    <!-- Description Textarea -->
+    <div>
+      <div class="textarea">
+        <label class="" style="vertical-align: top">Description</label>
+        <textarea class="col-xs-12" type="" [(ngModel)]="application.description" placeholder=""> </textarea>
+      </div>
+    </div>
+
+    <div class="buttonDiv">
+      <button type="button" class="btn btn-success" (click)="saveEdit()">Save</button>
+      <button type="button" class="btn btn-danger" (click)="clickCancel()">Cancel</button>
+    </div>
+  </div>
+
+</div>

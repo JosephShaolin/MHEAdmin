@@ -1,0 +1,37 @@
+[    
+    {
+        "AirId":"001",
+        "Directory":"Myte.ScrumMasters",
+        "IsGroup":true,
+        "CanEdit":true,
+        "CanRemove":true
+    },
+    {
+        "AirId":"001",
+        "Directory":"san.zhang@accenture.com",
+        "IsGroup":false,
+        "CanEdit":true,
+        "CanRemove":true
+    },
+    {
+        "AirId":"001",
+        "Directory":"si.li@accenture.com",
+        "IsGroup":false,
+        "CanEdit":false,
+        "CanRemove":false
+    },
+    {
+        "AirId":"002",
+        "Directory":"wu.wang@accenture.com",
+        "IsGroup":false,
+        "CanEdit":true,
+        "CanRemove":true
+    },
+    {
+        "AirId":"",
+        "Directory":"",
+        "IsGroup":false,
+        "CanEdit":false,
+        "CanRemove":false
+    }
+]

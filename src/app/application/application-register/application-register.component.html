@@ -1,0 +1,40 @@
+<div class="backGround">
+  <div>
+    <h2 class="title">Register Application</h2>
+  </div>
+  <div>
+    <!-- ID input-->
+    <div class="">
+      <label class="">
+        <span>App ID</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="application.airId" placeholder="">
+      <p class="help-block"></p>
+    </div>
+
+    <!-- Name input-->
+    <div>
+      <label class="">
+        <span>App Name</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="application.applicationName" placeholder="">
+
+    </div>
+
+    <!-- Description Textarea -->
+    <div>
+      <div class="textarea">
+        <label class="" style="vertical-align: top">Description</label>
+        <textarea class="col-xs-12" type="" [(ngModel)]="application.description"> </textarea>
+      </div>
+    </div>
+
+    <div class="buttonDiv">
+      <button type="button" class="btn btn-success" (click)="onRegister()">Register</button>
+      <button type="button" class="btn btn-danger" (click)="clickCancel()">Cancel</button>
+    </div>
+  </div>
+
+</div>
+
+<!-- <app-application-security></app-application-security> -->

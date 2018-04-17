@@ -1,0 +1,37 @@
+<p>
+  user access
+</p>
+<div class='table-responsive'>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Admin</th>
+        <th>Write</th>
+        <th>Read</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input class="" type="text" placeholder="Add user..." [(ngModel)]="addUser">
+          <span>
+            <button>read</button>
+            <button (click)='addAccessUser()'>add</button>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+    <tbody>
+      <tr *ngFor='let accessUser of accessUserList'>
+        <th>{{accessUser.Directory}}</th>
+        <th>
+          <input type="checkbox" [(ngModel)]="accessUser.IsGroup"> </th>
+        <th>
+          <input type="checkbox" [(ngModel)]="accessUser.CanEdit"> </th>
+        <th>
+          <input type="checkbox" [(ngModel)]="accessUser.CanRemove"> </th>
+      </tr>
+    </tbody>
+  </table>
+</div>

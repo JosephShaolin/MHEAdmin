@@ -1,0 +1,33 @@
+<div class="backGround">
+    <h2>My Applications :</h2>
+    <div class="">
+        <!-- <a [routerLink]="['/applicationDetail', application.airId]"  *ngFor='let application of applications'> -->
+            <div class="card  col-xs-12 " (click)="clickCard(application.airId)" *ngFor='let application of applications'>
+
+                <div class="projectContent col-xs-12 col-sm-8 ">
+                    <h2 class=" ">
+                        {{application.applicationName}}
+                    </h2>
+                    <p class="">
+                        <span>{{application.description|slice:0:200}}</span>
+                    </p>
+                </div>
+
+                <div class="btnDiv">
+                    <button type="button" class="btn btn-success" (click)="editApp($event,application.airId)">Edit</button>
+                    <button type="button" class="btn btn-danger" (click)="removeApp($event,application.airId)">Remove</button>
+                </div>
+
+            </div>
+        <!-- </a> -->
+
+        <a [routerLink]="[ '/registerApplication'] ">
+            <div class="card col-xs-12 col-sm-12" title="Add an Application">
+                <div class="addButton ">                   
+                    <span class="icon-add2 addImg"></span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>

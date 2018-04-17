@@ -1,0 +1,43 @@
+.card {
+        border-left: 8px solid #d3de72 !important;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        margin: 0 0 16px 0;
+        background: white;    
+        
+         margin-left: 20px
+}
+
+.projectContent {         
+        width: 70%;             
+}
+
+.addButton{
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+
+a{
+        text-decoration:none;
+        color:#414042;        
+}
+.addImg{       
+        font-size: 60px;      
+} 
+.backGround{
+        width: 65%;
+        margin:0 auto;
+        color:#414042;
+}
+
+.btnDiv{
+       
+        margin-top: 10px;
+       
+}
+
+button{
+        margin-left: 20px;
+        width: 100px;
+        margin-bottom: 10px;
+}

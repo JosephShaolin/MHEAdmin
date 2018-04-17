@@ -1,0 +1,50 @@
+<h2 class='title'>
+    {{ application.applicationName}}
+</h2>
+
+<p class='description'>
+    {{ application.description}}
+</p>
+
+<dir>
+
+</dir>
+
+<dir class="applicationDetail">
+    <span class="col-xs-12 col-sm-6 ">Air ID : {{ application.airId}}</span>
+    <span class="col-xs-12 col-sm-6 ">Disable : {{ application.deleted}}</span>
+    <span class="col-xs-12 ">Auth Code : {{ application.authCode}}</span>
+    <!-- <span class="col-xs-12 col-sm-6 ">Created User : {{ application.createdBy}}</span>
+        <span class="col-xs-12 col-sm-6 ">Last Modify User : {{ application.updatedBy}}</span> -->
+    <br style="clear:both;" />
+</dir>
+<legend></legend>
+
+<div class="backGround">
+    <h3>My Businesses :</h3>
+    <div class="">
+        <div class="col-xs-12 col-sm-6 " (click)="showBusiness(business.businessCode)" *ngFor='let business of myBusinesses'>
+            <div class="card">
+                <div class="businessIcon col-xs-2">
+                    <span class="icon-message" *ngIf="business.requestType=='0'"></span>
+                    <span class="icon-interaction" *ngIf="business.requestType=='1'"></span>
+                </div>
+                <div class="item col-xs-10">
+                    {{ business.name}}
+                </div>
+            </div>
+        </div>
+
+        <a [routerLink]="['/registerBusiness',currentAirId]">
+            <div class="col-xs-12 col-sm-6" title="Add A Business Unit">
+                <div class="card">
+                    <div class="addButton">
+                        <span class="icon-add addImg"></span>
+                    </div>
+                </div>
+
+            </div>
+        </a>
+
+    </div>
+</div>

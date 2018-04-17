@@ -1,0 +1,28 @@
+[
+    {
+        "airId": "6666",
+        "businessCode": "A01",
+        "requestType": 1,
+        "name": "test1",
+        "description": null,
+        "responseEndPoint": null,
+        "useDefaultTemplate": false,
+        "createdBy": null,
+        "createdDateTime": "0001-01-01T00:00:00",
+        "updatedBy": null,
+        "updatedDateTime": "0001-01-01T00:00:00"
+    },
+    {
+        "airId": "6666",
+        "businessCode": "A02",
+        "requestType": 0,
+        "name": "test2",
+        "description": null,
+        "responseEndPoint": null,
+        "useDefaultTemplate": false,
+        "createdBy": null,
+        "createdDateTime": "0001-01-01T00:00:00",
+        "updatedBy": null,
+        "updatedDateTime": "0001-01-01T00:00:00"
+    }
+]

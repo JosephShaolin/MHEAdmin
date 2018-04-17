@@ -1,0 +1,60 @@
+<div class="backGround">
+  <div>
+      <div class="buttonDiv col-xs-12">
+          <button class="btn btn-info backbtn" (click)="goBack()"><span class="icon-undo"> Back</span></button>
+          <button class="btn btn-success" (click)=" editOrSave()">{{editBtnName}}</button>
+          <button class="btn btn-danger" *ngIf="isEditable" (click)=" cancleEdit()">Cancle</button>
+          <button class="btn btn-danger" *ngIf="!isEditable" (click)="deleteBusiness()">Delete</button>
+        </div>
+    <div class="">
+      <label class="">
+        <span>Air ID :</span>
+      </label>
+      <input class="showMessage col-xs-12" [ngClass]="{'editMessage':isEditable}" disabled="disabled" type="text" [(ngModel)]="businessUnit.airId" placeholder="">
+    </div>
+
+    <div class="">
+      <label class="">
+        <span>Business Code :</span>
+      </label>
+      <input class="showMessage col-xs-12" [ngClass]="{'editMessage':isEditable}" disabled="disabled" type="text" [(ngModel)]="businessUnit.businessCode" placeholder="">
+    </div>
+
+    <div class="">
+      <label class="">
+        <span>Name :</span>
+      </label>
+      <input class="showMessage col-xs-12" [ngClass]="{'editMessage':isEditable}" [disabled]="!isEditable" type="text" [(ngModel)]="businessUnit.name" placeholder="">
+    </div>
+
+    <div class="controls">
+      <label class="control-label">
+        <span>Response End Point :</span>
+      </label>
+      <input class="showMessage col-xs-12" [ngClass]="{'editMessage':isEditable}" [disabled]="!isEditable" type="text" [(ngModel)]="businessUnit.responseEndPoint" placeholder="">
+    </div>
+
+    <div class="controls">
+      <label class="control-label">
+        <span>Request Type :</span>
+      </label>
+      <select class="showMessage col-xs-12" [ngClass]="{'editMessage':isEditable}" [disabled]="!isEditable" [(ngModel)]="businessUnit.requestType">
+        <option value="0">Message</option>
+        <option value="1">Interaction</option>
+      </select>
+
+    </div>
+
+    <label>Use Default Template</label>
+    <input type="checkbox" [disabled]="!isEditable" [(ngModel)]="businessUnit.useDefaultTemplate">
+
+    <div class="">
+      <div class="textarea">
+        <label class="" style="vertical-align: top">Description :</label>
+        <textarea type="" class="showMessage col-xs-12" [ngClass]="{'editMessage':isEditable}" [disabled]="!isEditable" [(ngModel)]="businessUnit.description"> </textarea>
+      </div>
+    </div>
+
+    
+  </div>
+</div>

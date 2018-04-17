@@ -1,0 +1,79 @@
+<div class="backGround">
+  <div class="title">
+    <h2>Register Business</h2>
+  </div>
+  <div>
+    <div class="">
+      <label class="">
+        <span>Air ID</span>
+      </label>
+      <input class="input-xlarge col-xs-12" disabled="disabled" type="text" [(ngModel)]="businessUnit.airId" placeholder="">
+    </div>
+
+    <div class="">
+      <label class="">
+        <span>Business Code</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="businessUnit.businessCode" placeholder="">
+    </div>
+
+    <div class="">
+      <label class="">
+        <span>Name</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="businessUnit.name" placeholder="">
+    </div>
+
+    <div class="controls">
+      <label class="control-label">
+        <span>Response End Point</span>
+      </label>
+      <input class="input-xlarge col-xs-12" type="text" [(ngModel)]="businessUnit.responseEndPoint" placeholder="">
+    </div>
+
+    <div class="controls">
+      <label class="control-label">
+        <span>Request Type</span>
+      </label>      
+      <select class=" col-xs-12" [(ngModel)]="businessUnit.requestType">
+          <option value ="0">Message</option>
+          <option value ="1">Interaction</option>          
+        </select>
+        
+    </div>
+
+    <label>Use Default Template</label>
+    <input type="checkbox" [(ngModel)]="businessUnit.useDefaultTemplate">
+
+    <div class="">
+      <div class="textarea">
+        <label class="" style="vertical-align: top">Description</label>
+        <textarea type="" class="col-xs-12" [(ngModel)]="businessUnit.description"> </textarea>
+      </div>
+    </div>
+
+    <div class="buttonDiv">
+      <button class="btn btn-success" (click)="onRegister()">Register</button>
+      <button class="btn btn-danger" (click)="clickCancel()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <ckeditor [(ngModel)]="ckeditorContent" debounce="500"  [config]="config" >
+  <ckgroup [name]="'documenthandling'">
+    <ckbutton [name]="'saveButton'" [command]="'saveCmd'" (click)="save($event)" [icon]="'save.png'" [label]="'Save Document'"
+      >
+    </ckbutton>
+    <ckbutton [name]="'saveButton1'" [command]="'saveCmd1'" (click)="save($event)" [icon]="'save.png'" [label]="'Save Document1'"
+      >
+    </ckbutton>
+  </ckgroup>
+  
+</ckeditor>
+
+输入的内容：
+<br> {{ ckeditorContent }} -->
