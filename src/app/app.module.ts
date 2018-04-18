@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -60,7 +61,8 @@ import { EditPageComponent } from './application/edit-page/edit-page.component';
     ApplicationsService,
     BusinessUnitsService,
     ApplicationsInformationService,
-    BussinesUnitsInformationService
+    BussinesUnitsInformationService,
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   entryComponents: [
     PopUp
